@@ -1,4 +1,13 @@
 {
+    "name": "nachach/ekwateur-code-promo",
+    "description": "Technical Test Ekwateur",
+    "homepage": "https://github.com/nachach/ekwateur-code-promo",
+    "authors": [
+        {
+            "name": "Nizar ACHACH",
+            "email": "achach.nizar@gmail.com"
+        }
+    ],
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "dev",
@@ -13,6 +22,9 @@
         "symfony/framework-bundle": "5.2.*",
         "symfony/serializer": "5.2.*",
         "symfony/yaml": "5.2.*"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.2"
     },
     "config": {
         "optimize-autoloader": true,

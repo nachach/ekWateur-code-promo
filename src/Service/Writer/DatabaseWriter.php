@@ -26,6 +26,7 @@ class DatabaseWriter extends Writer
      */
     public function write(array $datas)
     {
+        return [];
         //TODO: Write in Database with doctrine or native PDO
     }
 }
