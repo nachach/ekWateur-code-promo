@@ -1,6 +1,8 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    api.offer.url: "https://601025826c21e10017050013.mockapi.io/ekwatest/offerList"
+    api.promocode.url: "https://601025826c21e10017050013.mockapi.io/ekwatest/promoCodeList"
 
 services:
     # default configuration for services in *this* file
@@ -23,3 +25,11 @@ services:
     App\Controller\:
         resource: '../src/Controller/'
         tags: ['controller.service_arguments']
+
+    App\Service\OfferManager:
+        arguments:
+            $url: "%api.offer.url%"
+
+    App\Service\PromoCodeManager:
+        arguments:
+            $url: "%api.promocode.url%"
